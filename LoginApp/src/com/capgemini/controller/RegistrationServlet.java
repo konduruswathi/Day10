@@ -43,7 +43,7 @@ public void init(ServletConfig config)throws ServletException{
 			
 		}
 		else
-		{;
+		{
 		
 			users.put(username, password);
 			out.println("<h3>Registration Successful.</h3>");
