@@ -11,7 +11,7 @@ private List<Employee> employees=new ArrayList<>();
 	@Override
 	public List<Employee> findAllEmployees() {
 		
-		return null;
+		return employees;
 	}
 
 	@Override
@@ -34,7 +34,7 @@ private List<Employee> employees=new ArrayList<>();
 	@Override
 	public boolean addEmployeeId(Employee employee) {
 		
-		return false;
+		return employees.add(employee);
 	}
 
 	@Override

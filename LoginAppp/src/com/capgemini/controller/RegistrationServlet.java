@@ -46,7 +46,7 @@ public class RegistrationServlet extends HttpServlet {
 			
 				users.put(username, password);
 				out.println("<h3>Registration Successful.</h3>");
-				out.println("<br><br><a href='Login.html'>Login Here</a>");
+				out.println("<br><br><a href='login.html'>Login Here</a>");
 				context.setAttribute("usersData",users);
 				
 			}
