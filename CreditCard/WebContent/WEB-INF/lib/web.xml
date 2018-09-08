@@ -3,6 +3,5 @@
   <display-name>CreditCard</display-name>
    <welcome-file-list>
     <welcome-file>credit.html</welcome-file>
-    
   </welcome-file-list>
 </web-app>

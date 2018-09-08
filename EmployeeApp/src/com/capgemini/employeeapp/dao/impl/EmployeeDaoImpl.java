@@ -16,7 +16,11 @@ private List<Employee> employees=new ArrayList<>();
 
 	@Override
 	public Employee findEmployeeById(int employeeId) {
-		
+		for (Employee employee : employees) {
+			if(employee.getEmployeeId()==employeeId) {
+				return employee;
+			}
+		}
 		return null;
 	}
 
@@ -39,8 +43,20 @@ private List<Employee> employees=new ArrayList<>();
 
 	@Override
 	public Employee updateEmployee(Employee employee) {
-		
+		for (Employee employee1 : employees) {
+			if(employee1.getEmployeeId()==employee.getEmployeeId()) {
+				employee1.setEmployeeName(employee.getEmployeeName());
+				employee1.setEmployeeSalary(employee.getEmployeeSalary());
+				employee1.setEmployeeDepartment(employee.getEmployeeDepartment());
+				
+			}
+			return employee1;
+		}
 		return null;
 	}
 
-}
+
+
+	}
+
+
